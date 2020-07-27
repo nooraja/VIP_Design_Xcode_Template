@@ -9,15 +9,21 @@
 import UIKit
 
 protocol ___VARIABLE_sceneName___ViewDelegate where Self: UIViewController {
-  
-  func sendDataBackToParent(_ data: Data)
+	
+	func sendDataBackToParent(_ data: Data)
 }
 
 final class ___VARIABLE_sceneName___View: UIView {
-  
-  weak var delegate: ___VARIABLE_sceneName___ViewDelegate?
-  
-  private enum ViewTrait {
-    static let leftMargin: CGFloat = 10.0
-  }
+	
+	weak var delegate: ___VARIABLE_sceneName___ViewDelegate?
+	
+	override init(frame: CGRect) {
+		super.init(frame: frame)
+		backgroundColor = .white
+		
+	}
+	
+	required init?(coder: NSCoder) {
+		fatalError("init(coder:) has not been implemented")
+	}
 }

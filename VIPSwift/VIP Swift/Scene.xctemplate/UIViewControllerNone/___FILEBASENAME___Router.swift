@@ -32,9 +32,6 @@ extension ___VARIABLE_sceneName___Router: ___VARIABLE_sceneName___Routing {
         
       case .dismiss___VARIABLE_sceneName___Scene:
         self.dismiss___VARIABLE_sceneName___Scene()
-        
-      case .xScene(let data):
-        self.showXSceneBy(data)
       }
     }
   }
@@ -46,9 +43,5 @@ private extension ___VARIABLE_sceneName___Router {
   
   func dismiss___VARIABLE_sceneName___Scene() {
     viewController?.dismiss(animated: true)
-  }
-  
-  func showXSceneBy(_ data: Int) {
-    print("will show the next screen")
   }
 }

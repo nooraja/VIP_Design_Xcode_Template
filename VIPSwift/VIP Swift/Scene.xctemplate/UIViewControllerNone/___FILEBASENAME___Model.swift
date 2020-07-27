@@ -24,7 +24,6 @@ enum ___VARIABLE_sceneName___Model {
   
   enum Route {
     case dismiss___VARIABLE_sceneName___Scene
-    case xScene(xData: Int)
   }
   
   struct DataSource: DataSourceable {
