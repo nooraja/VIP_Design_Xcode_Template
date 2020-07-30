@@ -13,7 +13,7 @@ protocol ___VARIABLE_sceneName___DisplayLogic where Self: UIViewController {
 	func displayViewModel(_ viewModel: ___VARIABLE_sceneName___Model.ViewModel)
 }
 
-final class ___VARIABLE_sceneName___ViewController: UIViewController, Displayable, ___VARIABLE_sceneName___DisplayLogic {
+final class ___VARIABLE_sceneName___Controller: UIViewController, Displayable, ___VARIABLE_sceneName___DisplayLogic {
 	
 	private let mainView: ___VARIABLE_sceneName___View
 	private var interactor: ___VARIABLE_sceneName___Interactable!
@@ -71,7 +71,7 @@ final class ___VARIABLE_sceneName___ViewController: UIViewController, Displayabl
 
 
 // MARK: - ___VARIABLE_sceneName___ViewDelegate
-extension ___VARIABLE_sceneName___ViewController: ___VARIABLE_sceneName___ViewDelegate, UIGestureRecognizerDelegate {
+extension ___VARIABLE_sceneName___Controller: ___VARIABLE_sceneName___ViewDelegate, UIGestureRecognizerDelegate {
 	
 	func sendDataBackToParent(_ data: Data) {
 		//usually this delegate takes care of users actions and requests through UI
@@ -82,7 +82,7 @@ extension ___VARIABLE_sceneName___ViewController: ___VARIABLE_sceneName___ViewDe
 
 
 // MARK: - Private Zone
-private extension ___VARIABLE_sceneName___ViewController {
+private extension ___VARIABLE_sceneName___Controller {
 	
 	func displayDoSomething(_ viewModel: NSObject) {
 		print("Use the mainView to present the viewModel")
