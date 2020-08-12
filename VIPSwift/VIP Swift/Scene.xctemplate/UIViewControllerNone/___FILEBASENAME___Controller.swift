@@ -62,8 +62,8 @@ final class ___VARIABLE_sceneName___Controller: UIViewController, Displayable, _
 		DispatchQueue.main.async {
 			switch viewModel {
 				
-			case .doSomething(let viewModel):
-				self.displayDoSomething(viewModel)
+			case .do<#T##title: String?##String?#>(let viewModel):
+				self.displayDo<#T##title: String?##String?#>(viewModel)
 			}
 		}
 	}
@@ -84,8 +84,7 @@ extension ___VARIABLE_sceneName___Controller: ___VARIABLE_sceneName___ViewDelega
 // MARK: - Private Zone
 private extension ___VARIABLE_sceneName___Controller {
 	
-	func displayDoSomething(_ viewModel: NSObject) {
-		print("Use the mainView to present the viewModel")
+	func display<#T##title: String?##String?#>(_ viewModel: <#T##title: String?##String?#>) {
 		
 	}
 }

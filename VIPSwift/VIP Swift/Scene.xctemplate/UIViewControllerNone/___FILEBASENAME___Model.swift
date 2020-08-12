@@ -9,24 +9,24 @@
 import Foundation
 
 enum ___VARIABLE_sceneName___Model {
-  
-  enum Request {
-    case doSomething(item: Int)
-  }
-  
-  enum Response {
-    case doSomething(newItem: Int, isItem: Bool)
-  }
-  
-  enum ViewModel {
-    case doSomething(viewModelData: NSObject)
-  }
-  
-  enum Route {
-    case dismiss___VARIABLE_sceneName___Scene
-  }
-  
-  struct DataSource: DataSourceable {
-    //var test: Int
-  }
+	
+	enum Request {
+		case do<#T##title: String?##String?#>(<#T##title: String?##String?#>: <#T##title: String?##String?#>)
+	}
+	
+	enum Response {
+		case <#T##title: String?##String?#>(data: <#T##title: String?##String?#>)
+	}
+	
+	enum ViewModel {
+		case <#T##title: String?##String?#>(viewModel: <#T##title: String?##String?#>)
+	}
+	
+	enum Route {
+		case dismiss___VARIABLE_sceneName___Scene
+	}
+	
+	struct DataSource: DataSourceable {
+		var data: <#T##title: String?##String?#>
+	}
 }

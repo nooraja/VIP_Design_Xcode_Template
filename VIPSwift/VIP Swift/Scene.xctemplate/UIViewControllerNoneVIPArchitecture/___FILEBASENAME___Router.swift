@@ -9,39 +9,39 @@
 import UIKit
 
 protocol ___VARIABLE_sceneName___Routing {
-  
-  func routeTo(_ route: ___VARIABLE_sceneName___Model.Route)
+	
+	func routeTo(_ route: ___VARIABLE_sceneName___Model.Route)
 }
 
 final class ___VARIABLE_sceneName___Router: Routeable {
-  
-  private weak var viewController: UIViewController?
-  
-  init(_ viewController: UIViewController?) {
-    self.viewController = viewController
-  }
+	
+	private weak var viewController: UIViewController?
+	
+	init(_ viewController: UIViewController?) {
+		self.viewController = viewController
+	}
 }
 
 
 // MARK: - ___VARIABLE_sceneName___Routing
 extension ___VARIABLE_sceneName___Router: ___VARIABLE_sceneName___Routing {
-  
-  func routeTo(_ route: ___VARIABLE_sceneName___Model.Route) {
-    DispatchQueue.main.async {
-      switch route {
-        
-      case .dismiss___VARIABLE_sceneName___Scene:
-        self.dismiss___VARIABLE_sceneName___Scene()
-      }
-    }
-  }
+	
+	func routeTo(_ route: ___VARIABLE_sceneName___Model.Route) {
+		DispatchQueue.main.async {
+			switch route {
+				
+			case .dismiss___VARIABLE_sceneName___Scene:
+				self.dismiss___VARIABLE_sceneName___Scene()
+			}
+		}
+	}
 }
 
 
 // MARK: - Private Zone
 private extension ___VARIABLE_sceneName___Router {
-  
-  func dismiss___VARIABLE_sceneName___Scene() {
-    viewController?.dismiss(animated: true)
-  }
+	
+	func dismiss___VARIABLE_sceneName___Scene() {
+		viewController?.dismiss(animated: true)
+	}
 }
