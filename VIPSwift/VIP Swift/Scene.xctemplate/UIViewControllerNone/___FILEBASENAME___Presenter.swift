@@ -29,11 +29,11 @@ extension ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___Presentatio
 		switch response {
 			
 		case .<#T##title: String?##String?#>(let data):
-			presentDo<#T##title: String?##String?#>(data)
-	 case .<#T##title: String?##String?#>(let data, let item):
-	 presentDo<#T##title: String?##String?#>(data, item)
+			present<#T##title: String?##String?#>(data)
+	 case .<#T##title: String?##String?#>(let data:
+	 present<#T##title: String?##String?#>(data)
 			case .<#T##title: String?##String?#>(let data):
-			presentDo<#T##title: String?##String?#>(data)
+			present<#T##title: String?##String?#>(data)
 		}
 	}
 }
@@ -46,20 +46,20 @@ private extension ___VARIABLE_sceneName___Presenter {
 		
 		guard let validData = <#expression#> else { return <#return value#> }
 		
-		viewController?.displayViewModel(.<#T##title: String?##String?#>(viewModelData: validData))
-	}
-	
-	func present<#T##title: String?##String?#>(_ data: <#T##title: String?##String?#>, _ item: <#T##title: String?##String?#>) {
-		
-		guard let validData = <#expression#> else { return <#return value#> }
-		
-		viewController?.displayViewModel(.<#T##title: String?##String?#>(viewModelData: validData))
+		viewController?.displayViewModel(.<#T##title: String?##String?#>(viewModel: validData))
 	}
 	
 	func present<#T##title: String?##String?#>(_ data: <#T##title: String?##String?#>) {
 		
 		guard let validData = <#expression#> else { return <#return value#> }
 		
-		viewController?.displayViewModel(.<#T##title: String?##String?#>(viewModelData: validData))
+		viewController?.displayViewModel(.<#T##title: String?##String?#>(viewModel: validData))
+	}
+	
+	func present<#T##title: String?##String?#>(_ data: <#T##title: String?##String?#>) {
+		
+		guard let validData = <#expression#> else { return <#return value#> }
+		
+		viewController?.displayViewModel(.<#T##title: String?##String?#>(viewModel: validData))
 	}
 }

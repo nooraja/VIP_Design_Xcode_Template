@@ -17,9 +17,9 @@ enum ___VARIABLE_sceneName___Model {
 	}
 	
 	enum Response {
-		case <#T##title: String?##String?#>(data: <#T##title: String?##String?#>)
-		case <#T##title: String?##String?#>(data: <#T##title: String?##String?#>)
-		case <#T##title: String?##String?#>(data: <#T##title: String?##String?#>)
+		case <#T##title: String?##String?#>(result: <#T##title: String?##String?#>)
+		case <#T##title: String?##String?#>(result: <#T##title: String?##String?#>)
+		case <#T##title: String?##String?#>(result: <#T##title: String?##String?#>)
 	}
 	
 	enum ViewModel {

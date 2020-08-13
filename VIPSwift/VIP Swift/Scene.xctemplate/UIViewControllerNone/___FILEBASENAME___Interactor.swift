@@ -59,14 +59,14 @@ extension ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___BusinessLo
 private extension ___VARIABLE_sceneName___Interactor {
 	
 	func <#T##title: String?##String?#>(_ item: <#T##title: String?##String?#>) {
-		presenter.presentResponse(.<#T##title: String?##String?#>(newItem: <#T##title: String?##String?#>))
+		presenter.presentResponse(.<#T##title: String?##String?#>(result: <#T##title: String?##String?#>))
 	}
 	
 	func <#T##title: String?##String?#>(_ item: <#T##title: String?##String?#>) {
-		presenter.presentResponse(.<#T##title: String?##String?#>(newItem: <#T##title: String?##String?#>))
+		presenter.presentResponse(.<#T##title: String?##String?#>(result: <#T##title: String?##String?#>))
 	}
 	
 	func <#T##title: String?##String?#>() {
-		presenter.presentResponse(.<#T##title: String?##String?#>(newItem: <#T##title: String?##String?#>))
+		presenter.presentResponse(.<#T##title: String?##String?#>(result: <#T##title: String?##String?#>))
 	}
 }
