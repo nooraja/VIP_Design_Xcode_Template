@@ -23,7 +23,9 @@ protocol ___VARIABLE_sceneName___DataStore {
 final class ___VARIABLE_sceneName___Interactor: Interactable, ___VARIABLE_sceneName___DataStore {
 	
 	var dataSource: ___VARIABLE_sceneName___Model.DataSource
-	private var cancellabes = Set<AnyCancellable>()
+	private var <#T##title: String?##String?#>Dancellabes = Set<AnyCancellable>()
+	private var <#T##title: String?##String?#>Cancellabes = Set<AnyCancellable>()
+	private var <#T##title: String?##String?#>Cancellabes = Set<AnyCancellable>()
 	private var presenter: ___VARIABLE_sceneName___PresentationLogic
 	
 	init(viewController: ___VARIABLE_sceneName___DisplayLogic?, dataSource: ___VARIABLE_sceneName___Model.DataSource) {
@@ -41,8 +43,12 @@ extension ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___BusinessLo
 			
 			switch request {
 				
-			case .do<#T##title: String?##String?#>(let item):
-				self.do<#T##title: String?##String?#>(item)
+			case .<#T##title: String?##String?#>(let item):
+				self.<#T##title: String?##String?#>(item)
+			case .<#T##title: String?##String?#>:
+				self.<#T##title: String?##String?#>()
+			case .<#T##title: String?##String?#>(let item):
+				self.<#T##title: String?##String?#>(item)
 			}
 		}
 	}
@@ -52,7 +58,15 @@ extension ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___BusinessLo
 // MARK: - Private Zone
 private extension ___VARIABLE_sceneName___Interactor {
 	
-	func do<#T##title: String?##String?#>(_ item: Int) {
-		presenter.presentResponse(.doSomething(newItem: item + 1, isItem: true))
+	func <#T##title: String?##String?#>(_ item: <#T##title: String?##String?#>) {
+		presenter.presentResponse(.<#T##title: String?##String?#>(newItem: <#T##title: String?##String?#>))
+	}
+	
+	func <#T##title: String?##String?#>(_ item: <#T##title: String?##String?#>) {
+		presenter.presentResponse(.<#T##title: String?##String?#>(newItem: <#T##title: String?##String?#>))
+	}
+	
+	func <#T##title: String?##String?#>() {
+		presenter.presentResponse(.<#T##title: String?##String?#>(newItem: <#T##title: String?##String?#>))
 	}
 }

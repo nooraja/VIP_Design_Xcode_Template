@@ -62,8 +62,12 @@ final class ___VARIABLE_sceneName___Controller: UIViewController, Displayable, _
 		DispatchQueue.main.async {
 			switch viewModel {
 				
-			case .do<#T##title: String?##String?#>(let viewModel):
-				self.displayDo<#T##title: String?##String?#>(viewModel)
+			case .<#T##title: String?##String?#>(let viewModel):
+				self.display<#T##title: String?##String?#>(viewModel)
+				case .<#T##title: String?##String?#>(let viewModel):
+				self.display<#T##title: String?##String?#>(viewModel)
+				case .<#T##title: String?##String?#>(let viewModel):
+				self.display<#T##title: String?##String?#>(viewModel)
 			}
 		}
 	}
@@ -83,6 +87,14 @@ extension ___VARIABLE_sceneName___Controller: ___VARIABLE_sceneName___ViewDelega
 
 // MARK: - Private Zone
 private extension ___VARIABLE_sceneName___Controller {
+	
+	func display<#T##title: String?##String?#>(_ viewModel: <#T##title: String?##String?#>) {
+		
+	}
+	
+	func display<#T##title: String?##String?#>(_ viewModel: <#T##title: String?##String?#>) {
+		
+	}
 	
 	func display<#T##title: String?##String?#>(_ viewModel: <#T##title: String?##String?#>) {
 		

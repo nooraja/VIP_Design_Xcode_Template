@@ -17,6 +17,11 @@ final class ___VARIABLE_sceneName___View: UIView {
 	
 	weak var delegate: ___VARIABLE_sceneName___ViewDelegate?
 	
+	private enum ViewTrait {
+		static let padding: CGFloat = 16.0
+		static let placeHolderSearch: String = "Cari Pengaturan.."
+	}
+	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		backgroundColor = .white
