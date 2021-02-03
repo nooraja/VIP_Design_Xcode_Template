@@ -43,10 +43,6 @@ extension ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___BusinessLo
 				
 			case .<#T##title: String?##String?#>(let item):
 				self.<#T##title: String?##String?#>(item)
-			case .<#T##title: String?##String?#>:
-				self.<#T##title: String?##String?#>()
-			case .<#T##title: String?##String?#>(let item):
-				self.<#T##title: String?##String?#>(item)
 			}
 		}
 	}

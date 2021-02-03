@@ -23,7 +23,7 @@ enum ___VARIABLE_sceneName___Model {
 	}
 	
 	enum Route {
-		case dismiss___VARIABLE_sceneName___Scene
+		case dismiss
 	}
 	
 	struct DataSource: DataSourceable {
