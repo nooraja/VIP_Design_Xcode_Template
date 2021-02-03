@@ -23,9 +23,7 @@ protocol ___VARIABLE_sceneName___DataStore {
 final class ___VARIABLE_sceneName___Interactor: Interactable, ___VARIABLE_sceneName___DataStore {
 	
 	var dataSource: ___VARIABLE_sceneName___Model.DataSource
-	private var <#T##title: String?##String?#>Dancellabes = Set<AnyCancellable>()
-	private var <#T##title: String?##String?#>Cancellabes = Set<AnyCancellable>()
-	private var <#T##title: String?##String?#>Cancellabes = Set<AnyCancellable>()
+	private var subscriptions = Set<AnyCancellable>()
 	private var presenter: ___VARIABLE_sceneName___PresentationLogic
 	
 	init(viewController: ___VARIABLE_sceneName___DisplayLogic?, dataSource: ___VARIABLE_sceneName___Model.DataSource) {
@@ -59,14 +57,6 @@ extension ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___BusinessLo
 private extension ___VARIABLE_sceneName___Interactor {
 	
 	func <#T##title: String?##String?#>(_ item: <#T##title: String?##String?#>) {
-		presenter.presentResponse(.<#T##title: String?##String?#>(result: <#T##title: String?##String?#>))
-	}
-	
-	func <#T##title: String?##String?#>(_ item: <#T##title: String?##String?#>) {
-		presenter.presentResponse(.<#T##title: String?##String?#>(result: <#T##title: String?##String?#>))
-	}
-	
-	func <#T##title: String?##String?#>() {
 		presenter.presentResponse(.<#T##title: String?##String?#>(result: <#T##title: String?##String?#>))
 	}
 }

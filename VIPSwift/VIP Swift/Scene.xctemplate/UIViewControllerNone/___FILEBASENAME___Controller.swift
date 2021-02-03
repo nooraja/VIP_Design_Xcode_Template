@@ -64,10 +64,6 @@ final class ___VARIABLE_sceneName___Controller: UIViewController, Displayable, _
 				
 			case .<#T##title: String?##String?#>(let viewModel):
 				self.display<#T##title: String?##String?#>(viewModel)
-				case .<#T##title: String?##String?#>(let viewModel):
-				self.display<#T##title: String?##String?#>(viewModel)
-				case .<#T##title: String?##String?#>(let viewModel):
-				self.display<#T##title: String?##String?#>(viewModel)
 			}
 		}
 	}
@@ -91,12 +87,5 @@ private extension ___VARIABLE_sceneName___Controller {
 	func display<#T##title: String?##String?#>(_ viewModel: <#T##title: String?##String?#>) {
 		
 	}
-	
-	func display<#T##title: String?##String?#>(_ viewModel: <#T##title: String?##String?#>) {
-		
-	}
-	
-	func display<#T##title: String?##String?#>(_ viewModel: <#T##title: String?##String?#>) {
-		
-	}
+
 }

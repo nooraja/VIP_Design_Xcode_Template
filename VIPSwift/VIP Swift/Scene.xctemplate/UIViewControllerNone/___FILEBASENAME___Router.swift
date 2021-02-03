@@ -30,8 +30,8 @@ extension ___VARIABLE_sceneName___Router: ___VARIABLE_sceneName___Routing {
     DispatchQueue.main.async {
       switch route {
         
-      case .dismiss___VARIABLE_sceneName___Scene:
-        self.dismiss___VARIABLE_sceneName___Scene()
+      case .dismiss:
+        self.dismiss()
       }
     }
   }
@@ -41,7 +41,7 @@ extension ___VARIABLE_sceneName___Router: ___VARIABLE_sceneName___Routing {
 // MARK: - Private Zone
 private extension ___VARIABLE_sceneName___Router {
   
-  func dismiss___VARIABLE_sceneName___Scene() {
+  func dismiss() {
     viewController?.dismiss(animated: true)
   }
 }

@@ -19,7 +19,6 @@ final class ___VARIABLE_sceneName___View: UIView {
 	
 	private enum ViewTrait {
 		static let padding: CGFloat = 16.0
-		static let placeHolderSearch: String = "Cari Pengaturan.."
 	}
 	
 	override init(frame: CGRect) {

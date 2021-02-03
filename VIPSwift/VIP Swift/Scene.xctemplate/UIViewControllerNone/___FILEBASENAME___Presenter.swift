@@ -30,10 +30,6 @@ extension ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___Presentatio
 			
 		case .<#T##title: String?##String?#>(let data):
 			present<#T##title: String?##String?#>(data)
-	 case .<#T##title: String?##String?#>(let data:
-	 present<#T##title: String?##String?#>(data)
-			case .<#T##title: String?##String?#>(let data):
-			present<#T##title: String?##String?#>(data)
 		}
 	}
 }
@@ -41,20 +37,6 @@ extension ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___Presentatio
 
 // MARK: - Private Zone
 private extension ___VARIABLE_sceneName___Presenter {
-	
-	func present<#T##title: String?##String?#>(_ data: <#T##title: String?##String?#>) {
-		
-		guard let validData = <#expression#> else { return <#return value#> }
-		
-		viewController?.displayViewModel(.<#T##title: String?##String?#>(viewModel: validData))
-	}
-	
-	func present<#T##title: String?##String?#>(_ data: <#T##title: String?##String?#>) {
-		
-		guard let validData = <#expression#> else { return <#return value#> }
-		
-		viewController?.displayViewModel(.<#T##title: String?##String?#>(viewModel: validData))
-	}
 	
 	func present<#T##title: String?##String?#>(_ data: <#T##title: String?##String?#>) {
 		
